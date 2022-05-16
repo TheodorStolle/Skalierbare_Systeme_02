@@ -27,6 +27,8 @@ function($scope){
     $scope.todos.push({
 
     })
-  }
+  };
 
-}]);
+
+}]);  
+
