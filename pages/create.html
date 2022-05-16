@@ -17,16 +17,16 @@
     <body>
         <h4>TODO erstellen</h4>
         <div class="form-floating mb-3">
-            <input type="text" maxlength="160" class="form-control" placeholder="TODO">
+            <input type="text" maxlength="160" class="form-control" placeholder="TODO" ng-model="name">
             <label for="floatingInput">Aufgabe</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="date" class="form-control">
+            <input type="text" class="form-control" placeholder="TODO" ng-model="date">
             <label for="floatingInput">Datum</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="number" min="0" max="100" class="form-control" placeholder="Percentage">
-            <label for="floatingPassword">Aktueller Stand</label>
+            <input type="text" class="form-control" placeholder="Percentage" ng-model="progress">
+            <label for="floatingInput">Aktueller Stand</label>
           </div>
         <a id="btn" class="btn btn-danger" href="../mainpage.html">Zurück</button>
         <a id="btn" class="btn btn-success" href="../mainpage.html" ng-click="addTodo()">Erstellen</button>
