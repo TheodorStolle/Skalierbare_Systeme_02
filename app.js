@@ -1,5 +1,8 @@
 var app = angular.module("TodoList", []);
 
+// var mongoose = require('mongoose');
+// mongoose.connect('mongodb://localhost/news');
+
 app.controller("MainCtrl", [
 '$scope',
 function($scope){
@@ -27,8 +30,5 @@ function($scope){
     $scope.todos.push({
 
     })
-  };
-
-
-}]);  
-
+  }
+}]);
