@@ -12,7 +12,21 @@ function($scope){
   ];
 
   $scope.addTodo = function(){
-    $scope.todos.push({name: "A new Post", Date: "2024-11-11" , progress:"40%"});
+    if($scope.name === "" || $scope.date === "" || $scope.progress === "") {return; }
+    $scope.todos.push({
+      name: $scope.name,
+      date: $scope.date,
+      progress: $scope.progress
+    })
+    $scope.name = "";
+    $scope.date = "";
+    $scope.progress = "";
   };
+
+  $scope.editTodo = function(){
+    $scope.todos.push({
+
+    })
+  }
 
 }]);
