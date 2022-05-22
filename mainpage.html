@@ -36,12 +36,15 @@
               </tr>
             </tbody>
   </table>
+  
   <form ng-submit="addTodo()">
     <input type="text" ng-model="name"></input>
     <input type="text" ng-model="date"></input>
     <input type="text" ng-model="progress"></input>
   <button class="btn btn-danger" type="submit"> Create </button>
   </form>
+  
+
   <script>
       function deleteRow(r) {
         var i = r.parentNode.parentNode.rowIndex;
