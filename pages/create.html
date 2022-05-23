@@ -20,21 +20,23 @@
             <a href="../mainpage.html" class="text-decoration-none text text-dark">
                  <h1>To-Do Liste</h1>
             </a>
-       </div>
-        <div class="form-floating mb-3">
-            <input type="text" maxlength="160" class="form-control" placeholder="TODO" ng-model="name">
-            <label for="floatingInput">Aufgabe</label>
         </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" placeholder="TODO" ng-model="date">
-            <label for="floatingInput">Datum</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" placeholder="Percentage" ng-model="progress">
-            <label for="floatingInput">Aktueller Stand</label>
-        </div>
-        <a id="btn" class="btn btn-danger" href="../mainpage.html">Zurück</button>
-        <a id="btn" class="btn btn-success" href="../mainpage.html" ng-click="addTodo()">Erstellen</button>
+        <form ng-submit="addTodo()">
+            <div class="form-floating mb-3">
+                <input type="text" maxlength="160" class="form-control" placeholder="TODO" ng-model="name">
+                <label for="floatingInput">Aufgabe</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" placeholder="TODO" ng-model="date">
+                <label for="floatingInput">Datum</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" placeholder="Percentage" ng-model="progress">
+                <label for="floatingInput">Aktueller Stand</label>
+            </div>
+            <a id="btn" class="btn btn-danger" href="../mainpage.html">Zurück</button>
+            <a id="btn" class="btn btn-success" href="../mainpage.html" type="submit">Erstellen</button>
+        </form>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
